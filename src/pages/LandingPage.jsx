@@ -13,8 +13,9 @@ function LandingPage() {
 
   return (
     <>
-      <section id="about" className=" relative h-screen">
-        <video
+      <section id="about" className="relative bg-blu h-screen">
+    
+       <video
           id="section-bg"
           className={`absolute inset-0 w-full h-full object-fill z-0 `}
           src="/vid/video 2.mp4"
@@ -25,6 +26,7 @@ function LandingPage() {
           loop
           preload="true"
         />
+     
         <div className=" z-[10] absolute top-0 left-0 right-0 py-4 px-4">
           <Header/>
         </div>

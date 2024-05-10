@@ -8,7 +8,7 @@ export default {
     colors: {
       'light': '#f2ebd9',
       'dark': '#5f5452',
-      'blu': '#b2ceda',
+      'blu': '#b2cedc',
       'white': '#fff',
       'black': '#000000',
     },
