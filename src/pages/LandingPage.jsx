@@ -1,4 +1,3 @@
-import Header from "../components/Header"
 import img1 from "../assets/images/sect1/0F250C9D-87BE-486A-A259-47F36693D43F-removebg-preview.png"
 import img2 from "../assets/images/sect2/F603D010-22D7-4C84-953A-9B42D42DA377-removebg-preview.png"
 import radium from "../assets/images/sect3/radium.jpeg"
@@ -23,7 +22,7 @@ function LandingPage() {
         <video
           id="section-bg"
           className={`absolute inset-0 w-full h-full object-fill z-0 `}
-          src="/mainvid.mp4"
+          src="/vid/mainvid.mp4"
           type="video/mp4"
           muted
           playsInline
@@ -33,12 +32,13 @@ function LandingPage() {
         />
 
         <div className=" z-[5] absolute top-0 bottom-[0] left-0 right-0 w-full">
-          <div className=" h-full flex lg:flex-row flex-col-reverse gap-3">
+          <div className=" h-full flex lg:flex-row flex-col-reverse justify-between gap-3">
             <div className=" flex items-end justify-start z-0 w-[30%] min-w-[285px]">
               <img className=" w-full " src={img1} />
             </div>
 
-            <div className="flex items-start justify-center lg:w-[70%] px-3 py-3 md:py-20">
+            <div className="flex items-start justify-center lg:w-[70%] px-3 py-20">
+              <p>Click to copy</p>
               <div onClick={handleCopyText} className=" cursor-pointer border-black rounded-[50px] border-x-[3px] border-t-[3px] border-b-[6px] p-3 bg-white flex flex-col gap-4 ">
                 <p className="text-lg font-primary text-center">fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb</p>
               </div>
