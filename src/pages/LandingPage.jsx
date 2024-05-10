@@ -11,14 +11,19 @@ import img4 from "../assets/images/sect4/FECAFAC2-32FA-47D3-918F-52230CDDE19B-re
 
 function LandingPage() {
 
+  const handleCopyText = () => {
+    const textToCopy = 'fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb';
+    navigator.clipboard.writeText(textToCopy);
+  };
+
   return (
     <>
       <section id="about" className="relative bg-blu h-screen">
-    
-       <video
+
+        <video
           id="section-bg"
           className={`absolute inset-0 w-full h-full object-fill z-0 `}
-          src="/vid/video 2.mp4"
+          src="/mainvid.mp4"
           type="video/mp4"
           muted
           playsInline
@@ -26,15 +31,19 @@ function LandingPage() {
           loop
           preload="true"
         />
-     
-        <div className=" z-[10] absolute top-0 left-0 right-0 py-4 px-4">
-          <Header/>
-        </div>
+
         <div className=" z-[5] absolute top-0 bottom-[0] left-0 right-0 w-full">
-          <div className=" h-full flex gap-3">
+          <div className=" h-full flex lg:flex-row flex-col-reverse gap-3">
             <div className=" flex items-end justify-start z-0 w-[30%] min-w-[285px]">
               <img className=" w-full " src={img1} />
             </div>
+
+            <div className="flex items-start justify-center lg:w-[70%] px-3 py-3 md:py-20">
+              <div onClick={handleCopyText} className=" cursor-pointer border-black rounded-[50px] border-x-[3px] border-t-[3px] border-b-[6px] p-3 bg-white flex flex-col gap-4 ">
+                <p className="text-lg font-primary text-center">fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -52,8 +61,8 @@ function LandingPage() {
             <div className=" border-black rounded-[50px] border-x-[3px] border-t-[3px] border-b-[6px] p-6 bg-white flex flex-col gap-4 ">
               <h3 className=" font-primary text-[36px] md:text-[60px] text-center">SIamese Story</h3>
               <p className=" text-md md:text-lg xl:text-[30px] font-bold">$Siamese, known as the dog cat because of its extreme loyalty to its owner. His sapphire blue eyes set him apart from any other cat.
-              The meme became devoid of creativity, which made the Siamese set off on his own journey to work on the quality and creativity to make memes great again.
-              Join the Siamese movement today and together, we will make the meme space a more fun and creative place for everyone.
+                The meme became devoid of creativity, which made the Siamese set off on his own journey to work on the quality and creativity to make memes great again.
+                Join the Siamese movement today and together, we will make the meme space a more fun and creative place for everyone.
               </p>
             </div>
           </div>
@@ -126,18 +135,10 @@ function LandingPage() {
             </div>
           </div>
           <div className=" absolute left-0 bottom-0 z-[0] w-[30%] min-w-[150px] ">
-            <img src={img4} className=" w-full"/>
+            <img src={img4} className=" w-full" />
           </div>
         </div>
       </section>
-      <div className=" border-t-2 border-black flex flex-col w-full">
-        <div className=" py-3 px-3 bg-blu font-secondary flex flex-col items-center justify-center text-center">
-          <p> $SIAMESE is a meme coin with no intrinsic value or expectation of financial return. The coin is completely useless and for entertainment purposes only.</p>
-          <p>Copyright 2024 $SIAMESE</p>
-        </div>
-        <div className=" h-[19px] bg-dark"></div>
-        <div className=" h-[19px] bg-light"></div>
-      </div>
     </>
   )
 }
