@@ -95,15 +95,15 @@ const RaidsPage = () => {
                     <div className='py-5 px-6 rounded-lg bg-dark text-white font-secondary'>{currentJoke.message}</div>
                     <div className='w-full flex flex-row justify-center items-center gap-5'>
                         <div onClick={handleShuffleJoke} className="py-2 px-1 w-[200px] hover:bg-dark text-dark hover:text-white cursor-pointer text-xl font-secondary uppercase flex flex-col items-center justify-center bg-light rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
-                            <p className=' text-lg md:text-xs text-center'>shuffle meme</p>
+                            <p className=' text-sm md:text-lg text-center'>shuffle meme</p>
                         </div>
 
                         <div onClick={handleShuffleJoke2} className="py-2 px-1 w-[200px] text-xl hover:bg-dark text-dark hover:text-white cursor-pointer uppercase font-secondary flex flex-col items-center justify-center bg-light rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
-                            <p className=' text-lg md:text-xs text-center'>NFT Raid</p>
+                            <p className=' text-sm md:text-lg text-center'>NFT Raid</p>
                         </div>
                     </div>
                     <div className="py-2 w-[200px] text-xl hover:bg-light text-white hover:text-dark cursor-pointer uppercase font-secondary flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
-                        <p className=' text-lg md:text-xs text-center'>Raid</p>
+                        <p className=' text-lg md:text-lg text-center'>Raid</p>
                     </div>
                 </div>
 
