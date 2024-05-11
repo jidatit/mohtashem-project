@@ -37,10 +37,10 @@ function LandingPage() {
               <img className=" w-full " src={img1} />
             </div>
 
-            <div className="flex items-start justify-center lg:w-[70%] px-3 py-20">
-              <p>Click to copy</p>
-              <div onClick={handleCopyText} className=" cursor-pointer border-black rounded-[50px] border-x-[3px] border-t-[3px] border-b-[6px] p-3 bg-white flex flex-col gap-4 ">
-                <p className="text-lg font-primary text-center">fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb</p>
+            <div className="flex flex-col items-center justify-start lg:w-[70%] px-3 py-24">
+              <p className="text-lg font-secondary text-center"> REFUND ADDRESS - Click to copy</p>
+              <div onClick={handleCopyText} className=" cursor-pointer border-black rounded-[50px] border-x-[3px] border-t-[3px] border-b-[6px] p-3 bg-white">
+                <p className=" text-xs sm:text-sm md:text-lg font-primary text-center">fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb</p>
               </div>
             </div>
 

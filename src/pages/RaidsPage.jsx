@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import img1 from "../assets/images/raids/1.png"
 import img2 from "../assets/images/raids/2.png"
 import img3 from "../assets/images/raids/3.png"
@@ -16,57 +16,58 @@ const allJokes = [
     {
         joke_title: "dummy 1",
         joke_image: img1,
-        message: `dummy message 1`
+        message: `Siamese NFT is coming soon.
+        Stay tuned`
     },
     {
         joke_title: "dummy 2",
         joke_image: img2,
-        message: `dummy message 2`
+        message: `Siamese will make you rich`
     },
     {
         joke_title: "dummy 3",
         joke_image: img3,
-        message: `dummy message 3`
+        message: `The Siamese train is coming and you can't miss it`
     },
     {
         joke_title: "dummy 4",
         joke_image: img4,
-        message: `dummy message 4`
+        message: `Siamese to the moon`
     },
     {
         joke_title: "dummy 5",
         joke_image: img5,
-        message: `dummy message 5`
+        message: `Siamese is the next wave`
     },
     {
         joke_title: "dummy 6",
         joke_image: img6,
-        message: `dummy message 6`
+        message: `Siamese is the king of memes`
     },
     {
         joke_title: "dummy 7",
         joke_image: img7,
-        message: `dummy message 7`
+        message: `Siamese send it`
     },
     {
         joke_title: "dummy 8",
         joke_image: img8,
-        message: `dummy message 8`
+        message: `Siamese builds its own ecosystem`
     },
     {
         joke_title: "dummy 9",
         joke_image: img9,
-        message: `dummy message 9`
+        message: `$Siamese if you don't know now you know`
     },
     {
         joke_title: "dummy 10",
         joke_image: img10,
-        message: `dummy message 10`
+        message: `$Siamese done with the smart contract`
     },
     {
         joke_title: "dummy 11",
         joke_image: img11,
-        message: `dummy message 11`
+        message: `$Siamese is cooking something`
     },
 ];
 
@@ -78,25 +79,30 @@ const RaidsPage = () => {
         setCurrentJoke(allJokes[randomIndex]);
     };
 
+    const handleShuffleJoke2 = () => {
+        const lastIndex = 0;
+        setCurrentJoke(allJokes[lastIndex]);
+    };
+
     return (
         <>
             <section id="raids" className="relative px-4 md:px-10 py-20 md:py-20 bg-blu w-full min-h-screen flex flex-col items-center justify-start">
 
                 <div className='md:w-[50%] lg:w-[35%] w-[90%] gap-2 flex flex-col justify-start items-center'>
-                    <h1 className='font-secondary text-white text-[80px] text-center'>SIAMESE</h1>
-                    <p className='font-secondary text-white text-[30px] text-center'>{currentJoke.joke_title || "Random meme caption"}</p>
-                    <img className='md:w-full w-[80%] h-[400px] rounded-md' src={currentJoke.joke_image} alt={currentJoke.joke_title} />
-                    <div className='py-5 px-6 rounded-lg bg-dark text-white font-primary'>{currentJoke.message}</div>
+                    <h1 className='font-secondary text-white text-[60px] sm:text-[80px] text-center'>SIAMESE</h1>
+                    <p className='font-secondary text-white text-[30px] text-center'>Siamese raiiiddd faaasssttt</p>
+                    <img className='md:w-full w-full max-w-[350px] rounded-md' src={currentJoke.joke_image} alt={currentJoke.joke_title} />
+                    <div className='py-5 px-6 rounded-lg bg-dark text-white font-secondary'>{currentJoke.message}</div>
                     <div className='w-full flex flex-row justify-center items-center gap-5'>
-                        <div onClick={handleShuffleJoke} className="py-2 w-[200px] hover:bg-light cursor-pointer text-xl font-primary uppercase flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
+                        <div onClick={handleShuffleJoke} className="py-2 w-[200px] hover:bg-dark text-dark hover:text-white cursor-pointer text-xl font-secondary uppercase flex flex-col items-center justify-center bg-light rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
                             <p className='text-center'>shuffle meme</p>
                         </div>
 
-                        <div className="py-2 w-[200px] text-xl hover:bg-light cursor-pointer uppercase font-primary flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
-                            <p className='text-center'>select target</p>
+                        <div onClick={handleShuffleJoke2} className="py-2 w-[200px] text-xl hover:bg-dark text-dark hover:text-white cursor-pointer uppercase font-secondary flex flex-col items-center justify-center bg-light rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
+                            <p className='text-center'>NFT Raid</p>
                         </div>
                     </div>
-                    <div className="py-2 w-[200px] text-xl hover:bg-light cursor-pointer uppercase font-primary flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
+                    <div className="py-2 w-[200px] text-xl hover:bg-light text-white hover:text-dark cursor-pointer uppercase font-secondary flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
                         <p className='text-center'>Raid</p>
                     </div>
                 </div>

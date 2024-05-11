@@ -15,19 +15,19 @@ function Header() {
         <Link to="/raids" className=" hover:text-dark">Raids</Link>
       </div>
       <div className=" md:hidden flex">
-        <Link className=" font-primary border-black border-t-[3px] border-x-[3px] border-b-[6px] rounded-[10px] px-[15px] cursor-pointer">
+        <Link to="/raids" className=" font-primary border-black border-t-[3px] border-x-[3px] border-b-[6px] rounded-[10px] px-[15px] cursor-pointer">
           RAIDS
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center gap-1">
         <div className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
-          <img src={social1} className=" w-7 rounded-[6px]" />
+          <img src={telegramicon} className=" w-7 p-1 rounded-[6px]" />
         </div>
         <div className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
           <img src={twittericon} className=" w-7 p-1 rounded-[6px]" />
         </div>
         <div className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
-          <img src={telegramicon} className=" w-7 p-1 rounded-[6px]" />
+          <img src={social1} className=" w-7 rounded-[6px]" />
         </div>
       </div>
     </div>
