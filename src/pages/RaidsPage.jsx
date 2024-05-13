@@ -121,7 +121,7 @@ const RaidsPage = () => {
                                     <br/>
                                     Types & Attributes:
                                 </p>
-                                <div className=' flex md:flex-row flex-col gap-2 items-center justify-between'>
+                                <div className=' flex md:flex-row flex-col gap-2 items-center justify-center'>
                                     <div className=" text-md font-secondary text-white py-2 md:py-3 w-[200px] uppercase flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
                                         <p>5 TYPES</p>
                                         <p>100 ATTRIBUTES</p>
