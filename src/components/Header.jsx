@@ -24,10 +24,10 @@ function Header() {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center gap-1">
-        <Link to="https://t.me/Siamesecatmeme" className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
+        <Link to="https://t.me/Siamesecatmeme" target="_blank" className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
           <img src={telegramicon} className=" w-7 p-1 rounded-[6px]" />
         </Link>
-        <Link to="https://x.com/siamesmeme" className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
+        <Link to="https://x.com/siamesmeme" target="_blank" className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
           <img src={twittericon} className=" w-7 p-1 rounded-[6px]" />
         </Link>
         <div className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
