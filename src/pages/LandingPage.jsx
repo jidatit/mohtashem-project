@@ -41,9 +41,9 @@ function LandingPage() {
             </div>
 
             <div className="flex flex-col items-center justify-start lg:w-[70%] px-3 py-24">
-              <p className="text-lg font-secondary text-center"> REFUND ADDRESS - Click to copy</p>
+              {/* <p className="text-lg font-secondary text-center"> REFUND ADDRESS - Click to copy</p> */}
               <div onClick={handleCopyText} className=" cursor-pointer border-black rounded-[50px] border-x-[3px] border-t-[3px] border-b-[6px] p-3 bg-white">
-                <p className=" text-xs sm:text-sm md:text-lg font-primary text-center">fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb</p>
+                <p className=" text-xs sm:text-sm md:text-xl font-secondary text-black text-center">2rzys53Xx1aqX8ARTeaMyZfH85PbDzH8wuUBCoegs5Xi</p>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ function LandingPage() {
           <div className=" h-[19px] bg-light"></div>
         </div>
         <div className=" flex flex-col px-4 pt-14 pb-40 md:py-32 gap-4 justify-center items-center relative">
-          <h3 className=" z-[1] font-primary text-[36px] md:text-[60px] text-center">Contributors</h3>
+          <h3 className=" z-[1] font-primary text-[36px] md:text-[60px] text-center">SIAMESENOMICS</h3>
           <div className=" z-[1] w-full max-w-[526px] border-black rounded-[30px] border-x-[3px] border-t-[3px] border-b-[6px] py-6 px-10 bg-white">
             <div className=" text-white font-secondary flex justify-center flex-wrap gap-x-6 gap-y-4">
               <div className=" py-2 md:py-5 w-[200px] text-xl uppercase flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
@@ -144,7 +144,7 @@ function LandingPage() {
                 <p>AT LAUNCH</p>
               </div>
               <div className=" py-2 md:py-5 w-[200px] text-xl uppercase flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
-                <p>OWNERSHIP</p>
+                <p>All Authorities</p>
                 <p>REVOKED</p>
               </div>
             </div>
