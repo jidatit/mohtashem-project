@@ -12,7 +12,7 @@ function Header() {
         <Link to="/#about" className=" hover:text-dark">About</Link>
         <Link to="/#story" className=" hover:text-dark">Story</Link>
         <Link to="/#contributors" className=" hover:text-dark">Contibutors</Link>
-        <Link to="/#last" className=" hover:text-dark">Slerfnomics</Link>
+        <Link to="/#last" className=" hover:text-dark">SIAMESENOMICS</Link>
         <Link to="/raids" className=" hover:text-dark">Raids</Link>
       </div>
       <div className=" md:hidden flex gap-2">
