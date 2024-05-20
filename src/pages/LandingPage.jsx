@@ -10,6 +10,9 @@ import solscan from "../assets/images/sect3/solscan.png"
 import kucoin from "../assets/images/sect3/kucoin.jpeg"
 import jupiter from "../assets/images/sect3/jupiter.jpeg"
 import img4 from "../assets/images/sect4/FECAFAC2-32FA-47D3-918F-52230CDDE19B-removebg-preview.png"
+import Canvas from "../components/Canvas"
+import coinimg from "../assets/images/sect1/coin.png"
+import maintitleimg from "../assets/images/sect1/main.png"
 
 function LandingPage() {
 
@@ -22,17 +25,10 @@ function LandingPage() {
     <>
       <section id="about" className="relative bg-blu h-screen">
 
-        <video
-          id="section-bg"
-          className={`absolute inset-0 w-full h-full object-fill z-0 `}
-          src="/vid/mainvid.mp4"
-          type="video/mp4"
-          muted
-          playsInline
-          autoPlay
-          loop
-          preload="true"
-        />
+        <div className="w-full relative md:min-h-screen">
+          <Canvas imageSrc={coinimg} windSpeed={2} />
+          <img src={maintitleimg} className="w-[80%] md:w-[40%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="" />
+        </div>
 
         <div className=" z-[5] absolute top-0 bottom-[0] left-0 right-0 w-full">
           <div className=" h-full flex lg:flex-row flex-col-reverse justify-between gap-3">
@@ -65,10 +61,10 @@ function LandingPage() {
               <h3 className=" font-primary text-[36px] md:text-[60px] text-center">SIamese Story</h3>
               <p className=" font-secondary text-md xl:text-[30px] leading-7 sm:leading-10 max-h-[300px] overflow-y-auto md:max-h-[400px]">$Siamese, known as the dog cat because of its extreme loyalty to its owner. His sapphire blue eyes set him apart from any other cat.
                 The meme became devoid of creativity, which made the Siamese set off on his own journey to work on the quality and creativity to make memes great again.
-                <br/>
+                <br />
                 Discover the wide world of Siamese Meme and the digital financial ecosystem, powered by Siamese. A magical fantasy world where memes mean empowerment and creativity to create real value, with limitless interactions and integrations.
                 Siamese isn't just a meme - it's setting the standard for the future of memes on Web3.
-                <br/>
+                <br />
                 Join the Siamese movement today and together, we will make the meme space a more fun and creative place for everyone.
               </p>
             </div>
