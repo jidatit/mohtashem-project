@@ -7,12 +7,20 @@ const Snowfall = ({ imageSrc, windSpeed = 0 }) => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
     const particles = [];
-    const particleCount = 17;
+    const particleCount = 25;
     const img = new Image();
     img.src = imageSrc;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    // canvas.width = window.innerWidth ;
+    // canvas.height = window.innerHeight;
+
+    const ratio = Math.ceil(window.devicePixelRatio);
+    // const canvas = document.createElement('canvas');
+    canvas.width = window.innerWidth * ratio;
+    canvas.height = window.innerHeight * ratio;
+    canvas.style.width = `${window.innerWidth}px`;
+    canvas.style.height = `${window.innerHeight}px`;
+    canvas.getContext('2d').setTransform(ratio, 0, 0, ratio, 0, 0);
 
     class Particle {
       constructor() {

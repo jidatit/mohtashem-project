@@ -25,7 +25,7 @@ function LandingPage() {
     <>
       <section id="about" className="relative bg-blu h-screen">
 
-        <div className="w-full relative md:min-h-screen">
+        <div className="w-full relative md:min-h-screen overflow-x-hidden">
           <Canvas imageSrc={coinimg} windSpeed={2} />
           <img src={maintitleimg} className="w-[80%] md:w-[40%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="" />
         </div>
