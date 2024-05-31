@@ -3,6 +3,7 @@ import social1 from "../assets/images/header/0BCBBEA2-0A86-437E-A7FC-36D3BE1F23C
 import twittericon from "../assets/images/header/twitter.png"
 import telegramicon from "../assets/images/header/telegram.png"
 import homeicon from "../assets/images/header/house-black-silhouette-without-door.png"
+import bookicon from "../assets/images/header/BCBDBEE1-AD87-4B7D-8E20-52D31DE8FCCD.jpeg"
 
 function Header() {
 
@@ -29,6 +30,9 @@ function Header() {
         </Link>
         <Link to="https://x.com/siamesmeme" target="_blank" className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
           <img src={twittericon} className=" w-7 p-1 rounded-[6px]" />
+        </Link>
+        <Link to="https://siamese-1.gitbook.io/siamese" target="_blank" className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
+          <img src={bookicon} className=" w-7 p-1 rounded-[6px]" />
         </Link>
         <div className=" border-black border-t-[2px] border-r-[3px] border-b-[3px] border-l-[2px] hover:border-t-[3px] hover:border-r-[2px] hover:border-b-[2px] hover:border-l-[3px] rounded-[6px] cursor-pointer">
           <img src={social1} className=" w-7 rounded-[6px]" />

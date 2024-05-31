@@ -9,6 +9,8 @@ import dexview from "../assets/images/sect3/dexview.png"
 import solscan from "../assets/images/sect3/solscan.png"
 import kucoin from "../assets/images/sect3/kucoin.jpeg"
 import jupiter from "../assets/images/sect3/jupiter.jpeg"
+import bybit from "../assets/images/sect3/bybit.jpeg"
+import okex from "../assets/images/sect3/okex.jpeg"
 import img4 from "../assets/images/sect4/FECAFAC2-32FA-47D3-918F-52230CDDE19B-removebg-preview.png"
 import Canvas from "../components/Canvas"
 import coinimg from "../assets/images/sect1/coin.png"
@@ -78,7 +80,7 @@ function LandingPage() {
           <div className=" h-[19px] bg-light"></div>
         </div>
         <div className=" flex px-4 md:px-10 py-5 md:py-20 justify-center">
-          <div className=" w-full max-w-[600px] border-black rounded-[30px] border-x-[3px] border-t-[3px] border-b-[6px] py-6 px-10 bg-white flex flex-col gap-4">
+          <div className=" w-full max-w-[700px] border-black rounded-[30px] border-x-[3px] border-t-[3px] border-b-[6px] py-6 px-10 bg-white flex flex-col gap-4">
             <h3 className=" font-primary text-[36px] md:text-[36px] lg:text-[60px] text-center">Contributors</h3>
             <div className=" flex justify-center flex-wrap gap-x-6 gap-y-3 font-secondary">
               <div className=" flex flex-col items-center">
@@ -112,6 +114,14 @@ function LandingPage() {
               <div className=" flex flex-col items-center">
                 <img className=" w-[100px] h-[100px]" src={jupiter} />
                 <p>Jupiter</p>
+              </div>
+              <div className=" flex flex-col items-center">
+                <img className=" w-[100px] h-[100px]" src={bybit} />
+                <p>Bybit</p>
+              </div>
+              <div className=" flex flex-col items-center">
+                <img className=" w-[100px] h-[100px]" src={okex} />
+                <p>OKEX</p>
               </div>
             </div>
           </div>
