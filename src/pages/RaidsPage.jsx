@@ -10,6 +10,7 @@ import img8 from "../assets/images/raids/8.png"
 import img9 from "../assets/images/raids/9.png"
 import img10 from "../assets/images/raids/10.png"
 import img11 from "../assets/images/raids/11.png"
+import { Link } from 'react-router-dom'
 
 
 const allJokes = [
@@ -105,9 +106,9 @@ const RaidsPage = () => {
                                     <p className=' text-sm md:text-lg text-center'>NFT Raid</p>
                                 </div>
                             </div>
-                            <div className="py-2 w-[200px] text-xl hover:bg-light text-white hover:text-dark cursor-pointer uppercase font-secondary flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
+                            <Link to="https://x.com/siamesmeme/status/1796835516240761058?s=46" target='_blank' className="py-2 w-[200px] text-xl hover:bg-light text-white hover:text-dark cursor-pointer uppercase font-secondary flex flex-col items-center justify-center bg-dark rounded-[20px] border-x-[3px] border-t-[3px] border-b-[6px] border-black">
                                 <p className=' text-lg md:text-lg text-center'>Raid</p>
-                            </div>
+                            </Link>
 
                         </>
                     ):(

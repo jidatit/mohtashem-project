@@ -15,6 +15,7 @@ import img4 from "../assets/images/sect4/FECAFAC2-32FA-47D3-918F-52230CDDE19B-re
 import Canvas from "../components/Canvas"
 import coinimg from "../assets/images/sect1/coin.png"
 import maintitleimg from "../assets/images/sect1/main.png"
+import { Link } from "react-router-dom"
 
 function LandingPage() {
 
@@ -87,10 +88,10 @@ function LandingPage() {
                 <img className=" w-[100px] h-[100px]" src={radium} />
                 <p>Radium</p>
               </div>
-              <div className=" flex flex-col items-center">
+              <Link to="https://www.pinksale.finance/" target="_blank" className=" flex flex-col items-center">
                 <img className=" w-[100px] h-[100px]" src={pinksale} />
                 <p>Pinksale</p>
-              </div>
+              </Link>
               <div className=" flex flex-col items-center">
                 <img className=" w-[100px] h-[100px]" src={dexscreener} />
                 <p>Dex Screener</p>
@@ -99,10 +100,10 @@ function LandingPage() {
                 <img className=" w-[100px] h-[100px]" src={coingecko} />
                 <p>Coingecko</p>
               </div>
-              <div className=" flex flex-col items-center">
+              <Link to="https://www.dexview.com/" target="_blank" className=" flex flex-col items-center">
                 <img className=" w-[100px] h-[100px]" src={dexview} />
                 <p>Dexview</p>
-              </div>
+              </Link>
               <div className=" flex flex-col items-center">
                 <img className=" w-[100px] h-[100px]" src={solscan} />
                 <p>Solscan</p>
